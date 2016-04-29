@@ -20,4 +20,4 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
-30 21 * * * /etc/init.d/smb restart
+00 00 * * * /get.fish
