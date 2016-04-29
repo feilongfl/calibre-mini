@@ -10,7 +10,7 @@
 # Notice that tasks will be started based on the cron's system
 # daemon's notion of time and timezones.
 # 
-# Output of the crontab jobs (including errors) is sent through
+# Output of the crontab jobs (including errors) is sent throughsu
 # email to the user the crontab file belongs to (unless redirected).
 # 
 # For example, you can run a backup of all your user accounts
@@ -20,4 +20,4 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
-00 00 * * * /get.fish
+00 06 * * * /get.fish

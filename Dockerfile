@@ -1,7 +1,7 @@
 FROM rastasheep/ubuntu-sshd
 
 RUN apt-get update
-RUN apt-get install -y tmux git fish wget curl
+RUN apt-get install -y tmux git fish wget curl vim mutt
 RUN apt-get install -y calibre
 RUN apt-get clean
 RUN apt-get autoclean
