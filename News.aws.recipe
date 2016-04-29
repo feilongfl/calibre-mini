@@ -1,0 +1,38 @@
+#!/usr/bin/env python2
+# vim:fileencoding=utf-8
+from __future__ import unicode_literals, division, absolute_import, print_function
+from calibre.web.feeds.news import BasicNewsRecipe
+
+class AdvancedUserRecipe1457049973(BasicNewsRecipe):
+    title          = 'News'
+    oldest_article = 1
+    max_articles_per_feed = 19
+    auto_cleanup   = True
+
+    feeds          = [
+        ('\u8BDd\u9898', 'http://view.news.qq.com/index2010/zhuanti/ztrss.xml'),
+        ('\u56fd\u5185', 'http://news.qq.com/newsgn/rss_newsgn.xml'),
+        ('\u56fd\u9645', 'http://news.qq.com/newsgj/rss_newswj.xml'),
+        ('\u8d22\u7ecf', 'http://finance.qq.com/financenews/domestic/rss_domestic.xml'),
+        ('\u79d1\u6280', 'http://tech.qq.com/web/rss_web.xml'),
+        ('\u7ebd\u7ea6\u65f6\u62a5-\u56fd\u9645', 'http://cn.nytimes.com/rss.html'),
+        ('\u51b7\u5154', 'http://www.vccoo.com/a/5k7fv/rss.xml'),
+        ('\u77e5\u4e4e\u6bcf\u65e5\u7cbe\u9009', 'http://www.zhihu.com/rss'),
+        ('\u5C0F\u4F17\u8F6F\u4EF6', 'http://feed.appinn.com/'),
+        ('coolapk', 'http://www.coolapk.com/rss'),
+        
+    ########################
+    #please Change these url
+    #http://www.iwgc.cn/
+    #thank you!
+        ('\u65B0\u95FB\u54E5', 'http://rss.iwgc.cn/rss/2189-d0e028d32cc0a5d082732d3a72a79cb52098'),
+        ('\u4E1C\u65B9\u8D22\u5BCC\u7F51', 'http://rss.iwgc.cn/rss/4370-d0e028d32cc0a5d082732d3a72a79cb52098'),
+        ('\u7CD7\u4E8B\u767E\u79D1', 'http://rss.iwgc.cn/rss/151-d0e028d32cc0a5d082732d3a72a79cb52098'),
+        ('\u6781\u5BA2\u516C\u56ED', 'http://rss.iwgc.cn/rss/1222-d0e028d32cc0a5d082732d3a72a79cb52098'),
+        ('China Daily', 'http://rss.iwgc.cn/rss/1304-d0e028d32cc0a5d082732d3a72a79cb52098'),
+        ('\u4E01\u9999\u533B\u751F', 'http://rss.iwgc.cn/rss/11-d0e028d32cc0a5d082732d3a72a79cb52098'),
+        ('Top Men', 'http://rss.iwgc.cn/rss/1583-d0e028d32cc0a5d082732d3a72a79cb52098'),
+    ########################
+    ]
+    
+    
