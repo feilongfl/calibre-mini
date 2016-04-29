@@ -1,4 +1,4 @@
 #!/usr/bin/env fish
 
-echo 1
+ebook-convert Calibre-News.recipe /News/(date +”%Y%m%d”).mobi
 

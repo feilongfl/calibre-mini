@@ -6,7 +6,15 @@ RUN apt-get install -y calibre
 RUN apt-get clean
 RUN apt-get autoclean
 
-#RUN News.aws.recipe /Calibre-News.recipe 
-RUN News.recipe /Calibre-News.recipe 
+#ADD News.aws.recipe /Calibre-News.recipe 
+ADD News.recipe /Calibre-News.recipe 
+
+ADD get.fish /get.fish
+
+RUN mkdir /News
+
+ADD task.crontab /task.crontab
+
+RUN crontab /task.crontab
 
 EXPOSE 8080
