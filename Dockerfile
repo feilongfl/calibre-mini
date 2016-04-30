@@ -15,6 +15,8 @@ RUN mkdir /News
 
 #ADD rc.local /etc/rc.local
 
+RUN echo 'root:calibre' |chpasswd
+
 ADD task.crontab /task.crontab
 
 RUN crontab /task.crontab
