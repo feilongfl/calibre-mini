@@ -23,4 +23,5 @@ RUN crontab /task.crontab
 
 EXPOSE 8080
 
-CMD ["/usr/bin/calibre-server", "--with-library=/News"]
+#CMD ["/usr/bin/calibre-server", "--with-library=/News"]
+CMD ["/etc/rc.local"]

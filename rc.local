@@ -10,6 +10,6 @@
 # bits.
 #
 # By default this script does nothing.
-
+/usr/sbin/sshd -D
 /usr/bin/calibre-server --with-library=/News
 exit 0
