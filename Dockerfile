@@ -13,6 +13,8 @@ ADD get.fish /get.fish
 
 RUN mkdir /News
 
+ADD rc.local /etc/rc.loacl
+
 ADD task.crontab /task.crontab
 
 RUN crontab /task.crontab
