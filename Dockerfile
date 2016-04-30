@@ -13,10 +13,12 @@ ADD get.fish /get.fish
 
 RUN mkdir /News
 
-ADD rc.local /etc/rc.local
+#ADD rc.local /etc/rc.local
 
 ADD task.crontab /task.crontab
 
 RUN crontab /task.crontab
 
 EXPOSE 8080
+
+CMD ["/usr/bin/calibre-server", "--with-library=/News"]
