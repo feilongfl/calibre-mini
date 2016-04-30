@@ -11,5 +11,5 @@
 #
 # By default this script does nothing.
 
-calibre-server --with-library=News
+/usr/bin/calibre-server --with-library=/News
 exit 0
