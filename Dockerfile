@@ -21,6 +21,8 @@ ADD task.crontab /task.crontab
 
 RUN crontab /task.crontab
 
+RUN /etc/init.d/ssh start
+
 EXPOSE 8080
 
 CMD ["/usr/bin/calibre-server", "--with-library=/News"]
