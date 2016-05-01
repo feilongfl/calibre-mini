@@ -2,7 +2,9 @@ FROM rastasheep/ubuntu-sshd
 
 RUN apt-get update
 RUN apt-get install -y tmux git fish wget curl vim mutt
-RUN apt-get install -y calibre
+RUN apt-get install -y libjpeg62 libjpeg8 libpng12-0
+#RUN apt-get install -y calibre
+RUN wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
 RUN apt-get clean
 RUN apt-get autoclean
 
