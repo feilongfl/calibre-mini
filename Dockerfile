@@ -2,6 +2,7 @@ FROM rastasheep/ubuntu-sshd
 
 RUN apt-get update
 RUN apt-get install -y tmux git fish wget curl vim mutt
+RUN apt-get install -y xz-utils
 RUN apt-get install -y libjpeg62 libjpeg8 libpng12-0
 RUN apt-get install -y ImageMagick
 RUN apt-get install -y ttf-wqy-microhei
