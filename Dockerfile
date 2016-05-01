@@ -22,6 +22,7 @@ ADD task.crontab /task.crontab
 RUN crontab /task.crontab
 
 RUN /etc/init.d/ssh start
+RUN start cron
 
 EXPOSE 8080
 
